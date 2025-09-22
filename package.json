@@ -1,6 +1,6 @@
 {
     "name": "@knicola/gh-trends",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Fetch trending GitHub repositories.",
     "license": "MIT",
     "keywords": [
