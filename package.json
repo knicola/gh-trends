@@ -1,0 +1,53 @@
+{
+    "name": "@knicola/gh-trends",
+    "version": "0.0.0",
+    "description": "Fetch trending GitHub repositories.",
+    "license": "MIT",
+    "keywords": [
+        "github",
+        "trends",
+        "trending",
+        "scraper",
+        "cli"
+    ],
+    "author": {
+        "name": "Kyriakos Nicola",
+        "url": "https://github.com/knicola"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/knicola/gh-trends.git"
+    },
+    "bugs": {
+        "url": "https://github.com/knicola/gh-trends/issues"
+    },
+    "homepage": "https://github.com/knicola/gh-trends#readme",
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "bin": {
+        "gh-trends": "dist/cli.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsx src/cli.ts",
+        "start": "node dist/cli.js",
+        "lint": "biome check .",
+        "lint:fix": "biome check --write .",
+        "format": "biome format .",
+        "format:fix": "biome format --write .",
+        "test": "vitest run"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.4",
+        "@types/node": "^22.18.1",
+        "tsx": "^4.20.5",
+        "typescript": "^5.9.2",
+        "vitest": "^3.2.4"
+    },
+    "dependencies": {
+        "cheerio": "^1.1.2"
+    }
+}
